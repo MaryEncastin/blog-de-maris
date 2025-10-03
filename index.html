@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Culinario de Maris</title>
+  <meta name="description" content="Blog culinario de Maris: recetas fáciles y deliciosas para todos.">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="chef.jpg" alt="Icono del blog" class="icono">
+        <h1>Mi Blog Culinario Maris</h1>
+      </div>
+      <button class="hamburguesa" id="hamburguesa" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#recetas">Recetas</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="modo-oscuro">🌙</button>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="videos/video.mp4" type="video/mp4">
+      Tu navegador no soporta videos en HTML5.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="shower-container" id="showerContainer"></div>
+    <div class="hero-content">
+      <h2>Bienvenidos a Mi Blog Culinario</h2>
+      <p>Descubre recetas fáciles, deliciosas y con mucho amor.</p>
+      <a href="#recetas" class="btn-cta">Explorar Recetas</a>
+    </div>
+  </section>
+
+  <main id="recetas">
+    <h2>Recetas Destacadas</h2>
+    <section class="contenedor-recetas">
+      <article class="tarjeta fade-in destacada">
+        <span class="badge"><i class="fas fa-star"></i> Receta Destacada</span>
+        <img src="star.jpg" alt="Galletas caseras recién horneadas">
+        <h3>Galletitas</h3>
+        <p><strong>Tiempo:</strong> 10 min | <strong>Dificultad:</strong> Fácil</p>
+        <a href="galletitas.html" class="btn">Ver Receta</a>
+      </article>
+      <article class="tarjeta fade-in">
+        <img src="blan.jpg" alt="Paletas de chocolate caseras">
+        <h3>Paletas de Chocolate</h3>
+        <p><strong>Tiempo:</strong> 1 hr | <strong>Dificultad:</strong> Muy fácil</p>
+        <a href="paletas.html" class="btn">Ver Receta</a>
+      </article>
+      <article class="tarjeta fade-in">
+        <img src="fresas.jpg" alt="Fresas con crema">
+        <h3>Fresas con Crema</h3>
+        <p><strong>Tiempo:</strong> 10 min | <strong>Dificultad:</strong> Fácil</p>
+        <a href="fresas.html" class="btn">Ver Receta</a>
+      </article>
+    </section>
+  </main>
+
+  <section id="categorias" class="categorias">
+    <h2>Categorías</h2>
+    <div class="contenedor-categorias">
+      <div class="categoria">
+        <img src="be.jpg" alt="Imagen de bebidas refrescantes">
+        <h3>Bebidas</h3>
+        <p>12 recetas</p>
+      </div>
+      <div class="categoria">
+        <img src="postres.jpg" alt="Imagen de postres variados">
+        <h3>Postres</h3>
+        <p>20 recetas</p>
+      </div>
+      <div class="categoria">
+        <img src="platos.jpg" alt="Platos fuertes para almuerzo o cena">
+        <h3>Platos Fuertes</h3>
+        <p>18 recetas</p>
+      </div>
+      <div class="categoria">
+        <img src="veganas.jpg" alt="Recetas veganas saludables">
+        <h3>Veganas</h3>
+        <p>10 recetas</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="sobre-mi">
+    <img src="ch.jpg" alt="Foto de Maris">
+    <div>
+      <h2>Sobre mí</h2>
+      <p>¡Holisss! Soy Maris y me gustan mucho los postres, sobre todo aquellos que son fáciles de preparar. Mi postre favorito son las fresas con crema y también me gusta la awita de fresa bien fría.</p>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <h2>Suscríbete</h2>
+    <p>Recibe cada semana nuevas recetas y tips de cocina directamente en tu correo.</p>
+    <form id="form-newsletter">
+      <input type="email" placeholder="Ingresa tu email" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+  </section>
+
+  <footer id="contacto">
+    <p>&copy; 2025 - Blog Culinario | Creado por Maris</p>
+    <p>Contacto: mari@gmail.com | Tel: 7292431712</p>
+    <div class="redes">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
