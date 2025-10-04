@@ -20,7 +20,6 @@ body.dark {
   box-sizing: border-box;
 }
 
-/* Optimizaciones de rendimiento */
 html {
   scroll-behavior: smooth;
 }
@@ -35,7 +34,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Header optimizado */
 header {
   position: sticky;
   top: 0;
@@ -124,7 +122,6 @@ header nav ul li a:hover::after {
   transform: scale(1.1);
 }
 
-/* Hero section optimizada */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -175,7 +172,6 @@ header nav ul li a:hover::after {
   line-height: 1.4;
 }
 
-/* Shower optimizado para rendimiento */
 .shower-container {
   position: absolute;
   top: 0;
@@ -204,7 +200,6 @@ header nav ul li a:hover::after {
   100% { transform: translateY(110vh) rotate(360deg); opacity: 0.8; }
 }
 
-/* Optimización del shower para móviles */
 @media (max-width: 768px) {
   .food-item {
     animation-duration: calc(5s + 5 * var(--random-speed, 1));
@@ -223,7 +218,6 @@ body.dark .food-item {
   text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
 }
 
-/* Menú hamburguesa optimizado */
 .hamburguesa {
   display: none;
   flex-direction: column;
@@ -254,7 +248,6 @@ body.dark .food-item {
   display: flex;
 }
 
-/* Navegación móvil optimizada */
 @media (max-width: 768px) {
   #nav-menu {
     position: fixed;
@@ -297,7 +290,6 @@ body.dark .food-item {
   }
 }
 
-/* Botones optimizados */
 .btn-cta {
   padding: clamp(0.875rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
   background: var(--color-secundario);
@@ -322,7 +314,6 @@ body.dark .food-item {
   transform: translateY(-2px);
 }
 
-/* Main content optimizado */
 main {
   padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem);
   text-align: center;
@@ -345,7 +336,6 @@ main h2 {
   width: 100%;
 }
 
-/* Tarjetas optimizadas */
 .tarjeta {
   background: var(--color-bg);
   border-radius: 15px;
@@ -414,7 +404,6 @@ main h2 {
   100% { transform: scale(1); box-shadow: 0 0 5px rgba(246,199,0,0.6); }
 }
 
-/* Categorías optimizadas */
 .categorias {
   padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem);
   background: #f8f8f8;
@@ -475,7 +464,6 @@ body.dark .categorias {
   line-height: 1.5;
 }
 
-/* Sobre mí optimizado */
 .sobre-mi {
   display: flex;
   align-items: center;
@@ -516,7 +504,6 @@ body.dark .categorias {
   line-height: 1.6;
 }
 
-/* Newsletter optimizado */
 .newsletter {
   text-align: center;
   padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 4vw, 2rem);
@@ -576,7 +563,6 @@ body.dark .categorias {
   transform: translateY(-2px);
 }
 
-/* Footer optimizado */
 footer {
   background: var(--color-secundario);
   text-align: center;
@@ -620,7 +606,6 @@ footer .redes a:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Media Queries para máxima adaptabilidad */
 @media (min-width: 769px) and (max-width: 1024px) {
   .contenedor-recetas { 
     grid-template-columns: repeat(2, 1fr); 
@@ -659,7 +644,6 @@ footer .redes a:hover {
   }
 }
 
-/* Soporte para orientación landscape en móviles */
 @media (max-height: 500px) and (orientation: landscape) {
   .hero {
     min-height: 150vh;
@@ -675,7 +659,6 @@ footer .redes a:hover {
   }
 }
 
-/* Optimización para dispositivos táctiles */
 @media (hover: none) {
   .tarjeta:hover,
   .categoria:hover,
@@ -690,7 +673,6 @@ footer .redes a:hover {
   }
 }
 
-/* Botones optimizados para todos los dispositivos */
 button,
 .btn,
 .btn-cta,
@@ -743,19 +725,18 @@ button:focus,
   outline-offset: 3px;
 }
 
-/* Asegurar que todo sea 100% responsive */
 img, video, canvas {
   max-width: 100%;
   height: auto;
 }
 
-/* Prevenir desbordamientos */
+
 html, body {
   overflow-x: hidden;
   width: 100%;
 }
 
-/* Mejoras de rendimiento específicas */
+
 @media (max-width: 1024px) {
   .hero-video {
     display: none;
@@ -765,4 +746,5 @@ html, body {
     background: var(--color-principal);
   }
 }
+
 
